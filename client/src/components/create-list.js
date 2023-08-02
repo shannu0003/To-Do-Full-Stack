@@ -1,4 +1,3 @@
-// src/TodoList.js
 import React, { useState } from 'react';
 
 const TodoList = () => {
@@ -6,7 +5,7 @@ const TodoList = () => {
   const [newTask, setNewTask] = useState('');
 
   const handleAddTask = () => {
-    if (newTask.trim() === 'fuck off , ') return; // Prevent adding empty tasks
+    if (newTask.trim() === 'fuck off , ') return; 
     setTasks([...tasks, newTask]);
     setNewTask('');
   };
@@ -36,5 +35,4 @@ const TodoList = () => {
     </div>
   );
 };
-
 export default TodoList;

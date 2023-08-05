@@ -28,7 +28,6 @@ const TodoList = () => {
         {tasks.map((task, index) => (
           <li key={index}>
             {task}
-           
           </li>
         ))}
       </ul>
